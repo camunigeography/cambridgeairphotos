@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "588719ba15ee33086286f02018d2c85d",
+    "content-hash": "b4c5e63a06970fe432dcb532e640c4de",
     "packages": [
         {
             "name": "camunigeography/camunidata",
@@ -44,16 +44,16 @@
         },
         {
             "name": "libpurecontent/application",
-            "version": "v1.9.3",
+            "version": "v1.9.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/libpurecontent/application.git",
-                "reference": "6b0e2176772b07ca2ff55fb061f80e752b7a170b"
+                "reference": "e3c4be855d2e0158b4764b45de516935dbcb28a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/libpurecontent/application/zipball/6b0e2176772b07ca2ff55fb061f80e752b7a170b",
-                "reference": "6b0e2176772b07ca2ff55fb061f80e752b7a170b",
+                "url": "https://api.github.com/repos/libpurecontent/application/zipball/e3c4be855d2e0158b4764b45de516935dbcb28a1",
+                "reference": "e3c4be855d2e0158b4764b45de516935dbcb28a1",
                 "shasum": ""
             },
             "require": {
@@ -78,9 +78,9 @@
             "description": "PHP library application within the pureContent library suite",
             "support": {
                 "issues": "https://github.com/libpurecontent/application/issues",
-                "source": "https://github.com/libpurecontent/application/tree/v1.9.3"
+                "source": "https://github.com/libpurecontent/application/tree/v1.9.8"
             },
-            "time": "2024-01-26T18:35:38+00:00"
+            "time": "2025-11-03T19:33:45+00:00"
         },
         {
             "name": "libpurecontent/csv",
@@ -493,20 +493,20 @@
         },
         {
             "name": "libpurecontent/ultimateform",
-            "version": "v1.29.2",
+            "version": "v1.31.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/libpurecontent/ultimateform.git",
-                "reference": "bb02ff5237d694b232b026c150b638554c5bc72c"
+                "reference": "f0bf4242591232842c07cd56fbbfa0cdce032fa6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/libpurecontent/ultimateform/zipball/bb02ff5237d694b232b026c150b638554c5bc72c",
-                "reference": "bb02ff5237d694b232b026c150b638554c5bc72c",
+                "url": "https://api.github.com/repos/libpurecontent/ultimateform/zipball/f0bf4242591232842c07cd56fbbfa0cdce032fa6",
+                "reference": "f0bf4242591232842c07cd56fbbfa0cdce032fa6",
                 "shasum": ""
             },
             "require": {
-                "libpurecontent/application": "^1.9",
+                "libpurecontent/application": "^1.9.7",
                 "libpurecontent/database": "^4.2",
                 "libpurecontent/timedate": "^1.3"
             },
@@ -528,9 +528,9 @@
             "description": "PHP library ultimateForm within the pureContent library suite",
             "support": {
                 "issues": "https://github.com/libpurecontent/ultimateform/issues",
-                "source": "https://github.com/libpurecontent/ultimateform/tree/v1.29.2"
+                "source": "https://github.com/libpurecontent/ultimateform/tree/v1.31.3"
             },
-            "time": "2024-02-24T03:14:18+00:00"
+            "time": "2025-10-20T11:29:40+00:00"
         },
         {
             "name": "libpurecontent/useraccount",
@@ -931,10 +931,10 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }
