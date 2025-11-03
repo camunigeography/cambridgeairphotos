@@ -1312,8 +1312,13 @@ class cambridgeairphotos extends frontControllerApplication
 		# Get the data
 		$size = 500;
 		$url = $_SERVER['_SITE_URL'] . $this->baseUrl . '/api/v2/location?id=' . rawurlencode ($id) . '&size=' . $size;
-		// echo $url;
-		$json = file_get_contents ($url);
+		//echo $url;
+		if (!$json = file_get_contents ($url)) {
+			application::sendHeader (503);	// 503 because the API should be working; an unknown ID will still return a result, but with an error value
+			$html = "\n<p>This page is temporarily unavailable.</p>";
+			echo $html;
+			return false;
+		}
 		$data = json_decode ($json, true);
 		if (isSet ($data['error'])) {
 			$this->page404 ();
