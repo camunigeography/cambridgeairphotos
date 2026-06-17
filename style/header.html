@@ -63,12 +63,12 @@
 							<li>
 								<a href="/">Cambridge air photos</a>
 							</li>
-							{if (isSet ($section))}
+							{if (isset ($section))}
 							<li>
 								<span class="campl-current"><a href="{$sectionHref}">{$section}</a></span>
 							</li>
 							{/if}
-							{if (isSet ($title))}
+							{if (isset ($title))}
 							<li>
 								<span class="campl-current">{$title}</span>
 							</li>
