@@ -144,7 +144,12 @@ ul.splitlist4 {-moz-column-count: 6;
     column-count: 7;
     column-gap: 20px;}
 #droplist {position: relative; top: -20px; float: right;}
-#filmlisting {float: right; width: 450px; margin-left: 20px; max-height: 650px; overflow-y: scroll;}
+#filmrolls {position: relative;}
+#filmlisting {z-index: 1; position: absolute; right: 0; width: 450px; top: 0; bottom: 0; overflow-y: scroll; background-color: white;}
+table.filmlisting {height: 100%; margin: 15px; overflow-y: scroll;}
+table.filmlisting thead {position: sticky; top: 0;}
+table.filmlisting th {font-size: 13px; padding-bottom: 15px;}
+
 
 /* Mobile styles; see: https://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions */
 @media only screen and (min-width: 320px) and (max-width: 768px) {
