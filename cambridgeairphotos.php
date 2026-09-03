@@ -448,8 +448,14 @@ class cambridgeairphotos extends frontControllerApplication
 		# Determine the method
 		$method = $_GET['method'];
 		
-		# Get the data
+		# Determine and validate API method
 		$method = 'api' . ucfirst ($method);
+		if (!method_exists ($this, $method)) {
+			echo $this->page404 ();
+			return false;
+		}
+		
+		# Get the data
 		$data = $this->{$method} ();
 		
 		# JSON-encode the data
