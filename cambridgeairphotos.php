@@ -1065,7 +1065,7 @@ class cambridgeairphotos extends frontControllerApplication
 		$preparedStatementValues = array (
 			'match' => '%type',		// NB Will be used only if the type has words >3 characters
 			'subject1' => '%' . '%type' . '%',
-			'subject2' => '\\b' . '%type' . '\\b',	// MySQL8 uses \\b rather than [[:<:]] and [[:>:]] https://stackoverflow.com/a/60906360
+			'subject2' => '\\b' . '%type' . '\\b',	// Word boundaries; %type will have quoting added to escape special REGEXP characters
 		);		// %type gets substituted below
 		
 		# Generate the listing
@@ -1166,7 +1166,7 @@ class cambridgeairphotos extends frontControllerApplication
 			
 			# Normal query replacements
 			$string = str_replace ('%%type%', "%{$type}%", $string);
-			$string = str_replace ('\\b%type\\b', "\\b{$type}\\b", $string);	// Regexp with word boundary version
+			$string = str_replace ('\\b%type\\b', '\\b' . preg_quote ($type) . '\\b', $string);	// Regexp with word boundary version
 			if ($idLookups) {
 				$string = str_replace ('%id', $idLookups[$type], $string);
 			}
